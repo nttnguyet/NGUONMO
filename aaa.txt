@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace QLLUONG
+{
+     public class NhanVien
+    {
+         protected string ma;
+         protected string ten;
+         protected DateTime ngaysinh = new DateTime();
+         protected string diachi;
+         protected bool gioitinh;
+         protected float luongcb;
+         protected float ngaycong;
+
+         public NhanVien()
+         {
+             ma = "";
+             ten = "";
+             ngaysinh = DateTime.Today;
+             diachi = "";
+             gioitinh = false;
+             luongcb = 0;
+             ngaycong = 0;
+         }
+         public NhanVien(string m,string  ht,DateTime ns,bool gt, string dc, float cb, int nc)
+         {
+             ma = m;
+             ten = ht;
+             ngaysinh = ns;
+             gioitinh = gt;
+             diachi = dc;
+             luongcb=cb;
+             ngaycong = nc;
+
+         }
+         public string Ma
+         {
+             get { return ma; }
+             set { ma = value; }
+         }
+         public string Ten
+         {
+             get { return ten; }
+             set { ten = value; }
+         }
+         public DateTime Ngaysinh
+         {
+             get { return ngaysinh; }
+             set { ngaysinh = value; }
+         }
+         public bool Gioitinh
+         {
+             get { return  gioitinh; }
+             set {  gioitinh = value; }
+         }
+         public string Diachi
+         {
+             get { return diachi; }
+             set { diachi = value; }
+         }
+         public float Luongcb
+         {
+             get { return luongcb; }
+             set { luongcb = value; }
+         }
+         public float Ngaycong
+         {
+             get { return ngaycong; }
+             set { ngaycong = value; }
+         }
+
+         public float tinhluong()
+         {
+             return luongcb * ngaycong;
+         }
+    }
+}
