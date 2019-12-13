@@ -4,6 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace THILTHDT
+{
+    class PhongBan
+    {
+        private string Maphong;
+        private string Tenphong;
+
+        public PhongBan()
+        {
+            Maphong = "";
+            Tenphong = "";
+        }
+        public PhongBan(string maphong ,string tenphong)
+        {
+            Maphong = maphong;
+            Tenphong = tenphong;
+        }
+        public string Maphong1
+        {
+            get { return Maphong ; }
+            set { Maphong = value; }
+
+        }
+        public string Tenphong1
+        {
+            get { return Tenphong; }
+            set { Tenphong = value; }
+
+        }
+
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace QLLUONG
 {
      public class NhanVien
