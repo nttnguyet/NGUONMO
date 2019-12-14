@@ -1,0 +1,156 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace THILTHDT
+{
+    class PhongBan
+    {
+        private string Maphong;
+        private string Tenphong;
+
+        public PhongBan()
+        {
+            Maphong = "";
+            Tenphong = "";
+        }
+        public PhongBan(string maphong ,string tenphong)
+        {
+            Maphong = maphong;
+            Tenphong = tenphong;
+        }
+        public string Maphong1
+        {
+            get { return Maphong ; }
+            set { Maphong = value; }
+
+        }
+        public string Tenphong1
+        {
+            get { return Tenphong; }
+            set { Tenphong = value; }
+
+        }
+
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace QLLUONG
+{
+     public class NhanVien
+    {
+         protected string ma;
+         protected string ten;
+         protected DateTime ngaysinh = new DateTime();
+         protected string diachi;
+         protected bool gioitinh;
+         protected float luongcb;
+         protected float ngaycong;
+
+         public NhanVien()
+         {
+             ma = "";
+             ten = "";
+             ngaysinh = DateTime.Today;
+             diachi = "";
+             gioitinh = false;
+             luongcb = 0;
+             ngaycong = 0;
+         }
+         public NhanVien(string m,string  ht,DateTime ns,bool gt, string dc, float cb, int nc)
+         {
+             ma = m;
+             ten = ht;
+             ngaysinh = ns;
+             gioitinh = gt;
+             diachi = dc;
+             luongcb=cb;
+             ngaycong = nc;
+
+         }
+         public string Ma
+         {
+             get { return ma; }
+             set { ma = value; }
+         }
+         public string Ten
+         {
+             get { return ten; }
+             set { ten = value; }
+         }
+         public DateTime Ngaysinh
+         {
+             get { return ngaysinh; }
+             set { ngaysinh = value; }
+         }
+         public bool Gioitinh
+         {
+             get { return  gioitinh; }
+             set {  gioitinh = value; }
+         }
+         public string Diachi
+         {
+             get { return diachi; }
+             set { diachi = value; }
+         }
+         public float Luongcb
+         {
+             get { return luongcb; }
+             set { luongcb = value; }
+         }
+         public float Ngaycong
+         {
+             get { return ngaycong; }
+             set { ngaycong = value; }
+         }
+
+         public float tinhluong()
+         {
+             return luongcb * ngaycong;
+         }
+    }
+}
+
+T?i hôm nay anh có gì b?n tâm
+Mà sao h?i anh v?n c? ch?i
+Không mu?n nói c? ng?i l?ng câm
+Oh oh
+
+Th?y, hôm qua em có nhi?u di?u sai
+Ngu?i c? g?i em ch?ng b?t máy
+Em vô tu không c?n ngày mai
+Oh oh
+
+Oh no
+C? hôm nay em dã suy nghi
+R?ng n?u
+C? gi?n h?n s? không có ích chi
+Ngu?i h?i
+Nh?ng di?u anh dã nói r?t dúng
+Em sai r?i em sai r?i em sai r?i
+
+Anh xin l?i em di
+(Có nh?ng lúc em vô tâm hon là b?n tâm)
+Em dã sai
+Anh xin l?i em di
+(Có nh?ng lúc em vô tu ch?ng c?n s?u tu)
+Em dã sai
+Dù em bi?t em bi?t em còn em còn
+nh?ng sai l?m ch?ng nhu ai
+Anh xin l?i em di
+Anh xin l?i em di
+T? nay em s? không th? n?a
+hihi
+
+
+
+
+Em sai roi anh xin loi em diiiiiii 
