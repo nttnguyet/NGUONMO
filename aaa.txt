@@ -1,3 +1,46 @@
+<div class="row">
+<div class="col-md-6 col-md-offset-3 text-center thongbaoloi" style=" margin-left:560px">
+<?php
+if(isset($_POST["submit"]))
+{
+    if(empty($_POST['user']) or empty($_POST['matkhau']))//n?u r?ng
+    {
+       
+        echo '<p style="color:red"> Vui lòng không d? tr?ng </p>';
+    }
+    else
+    {
+        $user=$_POST['user'];//nh?p ròi thì gán
+        $pass=$_POST['matkhau'];
+        $pass2=$_POST['matkhau2'];
+        if(strlen($user)< 6 or strlen($pass) <6)//sau dó kt 
+        {
+            echo '<p style="color:red"> Tài kho?n và m?t kh?u ph?i trên 6 ký t? </p>';
+        }
+        else {
+            if($pass2 != $pass )
+            {   
+            echo '<p style="color:red"> M?t kh?u không trùng nhau </p>';
+            }
+            else
+            {//inser nh?ng c?t c?n thêm value thu?c tính c?t
+                $data="insert into khachhang(user,matkhau,matkhau2,tenkh,diachi,dienthoai)
+                values(:user,:matkhau,:matkhau2,:tenkh,:diachi,:dienthoai)";
+                //truy v?n 
+        $array=array(":user"=>$_POST["user"],":matkhau"=>$_POST["matkhau"],":matkhau2"=>$_POST["matkhau2"],":tenkh"=>$_POST["tenkh"],":diachi"=>$_POST["diachi"],":dienthoai"=>$_POST["dienthoai"]);
+        //kt data có b? l?i hay hk
+        $stm=$obj->prepare($data);
+        //
+        $stm->execute($array);
+        $n=$stm->rowCount();//d?m có bn nhiu vd khách hàng dx thêm
+        if ($n >0)
+            {
+?>
+  
+<script type="text/javascript">
+    alert('B?n dã dang ký thành công');
+</script>
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
