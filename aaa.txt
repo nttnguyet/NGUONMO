@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CODE PHP
 
 else if(strlen($sdt) > 10)
@@ -10,6 +11,9 @@ else if(strlen($sdt) > 10)
                  echo '<p style="color:red">Không du?c nh?p ký t? d?c bi?t</p>';
             }
 <div class="row">
+=======
+<div class="row"> //ngua
+>>>>>>> ThuNguyet
 <div class="col-md-6 col-md-offset-3 text-center thongbaoloi" style=" margin-left:560px">
 <?php
 if(isset($_POST["submit"]))
